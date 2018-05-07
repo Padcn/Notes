@@ -12,11 +12,14 @@
 2. 计算机->属性->高级系统设置->高级->环境变量。
   举例:(jdk安装路径为d:/jdk)则环境变量设置如下（等号前为新建变量名，等号后为变量的值）:
 
-  ​	JAVA_HOME=d:\jdk
+  ```
+  	JAVA_HOME=d:\jdk
   	CLASSPATH=.;d:\jdk\lib
   	PATH=<这里为原先path的值>;%JAVA_HOME%\bin;
+  ```
 
-  这里主要目的是为了将安装的路径加入PATH中，JAVA_HOME和CLASSPATH只是中间的变量。偷懒可以直接把全路径添加到PATH的末尾,但是这样就不好管理。
+  这里主要目的是为了将安装的路径加入PATH中，JAVA_HOME和CLASSPATH只是中间的变量。偷懒可以直接把全路径添加到PATH的末尾,但是这样以后就不好管理。
+
 3. 完成环境变量的配置后可以按win+r 输入cmd之后打开命令行后输入'java -version'进行验证如果输入没有该命令则配置没有成功,仔细检查配置的路径修改.成功则会显示jdk的版本号。
 
 ### linux下 
