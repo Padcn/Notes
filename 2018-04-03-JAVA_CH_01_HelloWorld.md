@@ -24,7 +24,7 @@
 
 ### linux下 
 linux下可以直接使用软件包管理器安装openjdk，也可以去oracle下载jdk。
-对于直接使用包管理器安装的安装完就完事了。
+对于直接使用包管理器安装的安装完,位置应该在/usr/lib/jvm下，按照这个路径配置环境变量。
 如果自己去oracle下载的则需要解压到想要存放的位置，后配置下环境变量。
 假设解压后存放位置在/usr/java/jdk.则在/etc/profile文件末尾加上以下内容
 可以用命令` vim /etc/profile `编辑，或者新手可以使用` nano /etc/profile `
@@ -118,7 +118,7 @@ public class People{
 
 
 
-面向对象三种特性： 
+## 面向对象三种特性： 
 
 ### 封装
 
